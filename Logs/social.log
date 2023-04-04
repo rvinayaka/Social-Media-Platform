@@ -1,0 +1,396 @@
+WARNING:2023-04-04 17:08:17,477:app:Starting the db connection to create post
+ERROR:2023-04-04 17:08:17,477:app:Error occurred: 'dict' object is not callable
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 128, in create_post
+    data = request.json()
+TypeError: 'dict' object is not callable
+ERROR:2023-04-04 17:08:17,477:app:Error occurred: 'dict' object is not callable
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 128, in create_post
+    data = request.json()
+TypeError: 'dict' object is not callable
+WARNING:2023-04-04 17:08:17,480:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:08:17,480:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:08:17,480:app:Hence post created, closing the connection
+ERROR:2023-04-04 17:08:17,480:app:Exception on /create_post/2 [POST]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 128, in create_post
+    data = request.json()
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 145, in create_post
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type TypeError is not JSON serializable
+ERROR:2023-04-04 17:08:17,480:app:Exception on /create_post/2 [POST]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 128, in create_post
+    data = request.json()
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 145, in create_post
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type TypeError is not JSON serializable
+ERROR:2023-04-04 17:08:17,480:app:Exception on /create_post/2 [POST]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 128, in create_post
+    data = request.json()
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 145, in create_post
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type TypeError is not JSON serializable
+WARNING:2023-04-04 17:09:31,565:app:Starting the db connection to create post
+ERROR:2023-04-04 17:09:31,565:app:Error occurred: tuple index out of range
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 137, in create_post
+    cur.execute(query, values)
+IndexError: tuple index out of range
+ERROR:2023-04-04 17:09:31,565:app:Error occurred: tuple index out of range
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 137, in create_post
+    cur.execute(query, values)
+IndexError: tuple index out of range
+WARNING:2023-04-04 17:09:31,568:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:09:31,568:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:09:31,568:app:Hence post created, closing the connection
+ERROR:2023-04-04 17:09:31,568:app:Exception on /create_post/2 [POST]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 137, in create_post
+    cur.execute(query, values)
+IndexError: tuple index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 145, in create_post
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type IndexError is not JSON serializable
+ERROR:2023-04-04 17:09:31,568:app:Exception on /create_post/2 [POST]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 137, in create_post
+    cur.execute(query, values)
+IndexError: tuple index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 145, in create_post
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type IndexError is not JSON serializable
+ERROR:2023-04-04 17:09:31,568:app:Exception on /create_post/2 [POST]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 137, in create_post
+    cur.execute(query, values)
+IndexError: tuple index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 145, in create_post
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type IndexError is not JSON serializable
+WARNING:2023-04-04 17:10:27,011:app:Starting the db connection to create post
+ERROR:2023-04-04 17:10:27,233:app:Error occurred: no results to fetch
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 138, in create_post
+    data = cur.fetchall()
+psycopg2.ProgrammingError: no results to fetch
+ERROR:2023-04-04 17:10:27,233:app:Error occurred: no results to fetch
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 138, in create_post
+    data = cur.fetchall()
+psycopg2.ProgrammingError: no results to fetch
+WARNING:2023-04-04 17:10:27,236:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:10:27,236:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:10:27,236:app:Hence post created, closing the connection
+ERROR:2023-04-04 17:10:27,237:app:Exception on /create_post/2 [POST]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 138, in create_post
+    data = cur.fetchall()
+psycopg2.ProgrammingError: no results to fetch
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 145, in create_post
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type ProgrammingError is not JSON serializable
+ERROR:2023-04-04 17:10:27,237:app:Exception on /create_post/2 [POST]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 138, in create_post
+    data = cur.fetchall()
+psycopg2.ProgrammingError: no results to fetch
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 145, in create_post
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type ProgrammingError is not JSON serializable
+ERROR:2023-04-04 17:10:27,237:app:Exception on /create_post/2 [POST]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 138, in create_post
+    data = cur.fetchall()
+psycopg2.ProgrammingError: no results to fetch
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 145, in create_post
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type ProgrammingError is not JSON serializable
+WARNING:2023-04-04 17:10:52,435:app:Starting the db connection to create post
+INFO:2023-04-04 17:10:52,587:app:Created new post with account no. 2
+INFO:2023-04-04 17:10:52,587:app:Created new post with account no. 2
+WARNING:2023-04-04 17:10:52,590:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:10:52,590:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:10:52,590:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:11:21,729:app:Starting the db connection to create post
+WARNING:2023-04-04 17:11:21,729:app:Starting the db connection to create post
+WARNING:2023-04-04 17:11:21,729:app:Starting the db connection to create post
+WARNING:2023-04-04 17:11:21,729:app:Starting the db connection to create post
+INFO:2023-04-04 17:11:21,970:app:Created new post with account no. 2
+INFO:2023-04-04 17:11:21,970:app:Created new post with account no. 2
+INFO:2023-04-04 17:11:21,970:app:Created new post with account no. 2
+INFO:2023-04-04 17:11:21,970:app:Created new post with account no. 2
+INFO:2023-04-04 17:11:21,970:app:Created new post with account no. 2
+WARNING:2023-04-04 17:11:21,970:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:11:21,970:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:11:21,970:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:11:21,970:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:11:21,970:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:11:21,970:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:12:13,757:app:Starting the db connection to create post
+INFO:2023-04-04 17:12:14,065:app:Created new post with account no. 2
+INFO:2023-04-04 17:12:14,065:app:Created new post with account no. 2
+WARNING:2023-04-04 17:12:14,068:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:12:14,068:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:12:14,068:app:Hence post created, closing the connection
+WARNING:2023-04-04 17:21:20,642:app:Starting the db connection to like the post
+INFO:2023-04-04 17:21:20,869:app:post liked by Anya
+INFO:2023-04-04 17:21:20,869:app:post liked by Anya
+WARNING:2023-04-04 17:21:20,870:app:Hence post liked, closing the connection
+WARNING:2023-04-04 17:21:20,870:app:Hence post liked, closing the connection
+WARNING:2023-04-04 17:21:20,870:app:Hence post liked, closing the connection
+WARNING:2023-04-04 17:22:24,086:app:Starting the db connection to update the details 
+WARNING:2023-04-04 17:22:24,086:app:Starting the db connection to update the details 
+WARNING:2023-04-04 17:22:24,086:app:Starting the db connection to update the details 
+WARNING:2023-04-04 17:22:24,086:app:Starting the db connection to update the details 
+INFO:2023-04-04 17:22:24,274:app:Anya commented on post
+INFO:2023-04-04 17:22:24,274:app:Anya commented on post
+INFO:2023-04-04 17:22:24,274:app:Anya commented on post
+INFO:2023-04-04 17:22:24,274:app:Anya commented on post
+INFO:2023-04-04 17:22:24,274:app:Anya commented on post
+WARNING:2023-04-04 17:22:24,275:app:Hence commented on the post, closing the connection
+WARNING:2023-04-04 17:22:24,275:app:Hence commented on the post, closing the connection
+WARNING:2023-04-04 17:22:24,275:app:Hence commented on the post, closing the connection
+WARNING:2023-04-04 17:22:24,275:app:Hence commented on the post, closing the connection
+WARNING:2023-04-04 17:22:24,275:app:Hence commented on the post, closing the connection
+WARNING:2023-04-04 17:22:24,275:app:Hence commented on the post, closing the connection
