@@ -394,3 +394,9 @@ WARNING:2023-04-04 17:22:24,275:app:Hence commented on the post, closing the con
 WARNING:2023-04-04 17:22:24,275:app:Hence commented on the post, closing the connection
 WARNING:2023-04-04 17:22:24,275:app:Hence commented on the post, closing the connection
 WARNING:2023-04-04 17:22:24,275:app:Hence commented on the post, closing the connection
+WARNING:2023-04-05 12:40:45,218:app:Starting the db connection to display list of accounts
+INFO:2023-04-05 12:40:45,584:app:Displayed list of all accounts
+INFO:2023-04-05 12:40:45,584:app:Displayed list of all accounts
+WARNING:2023-04-05 12:40:45,585:app:Closing the connection
+WARNING:2023-04-05 12:40:45,585:app:Closing the connection
+WARNING:2023-04-05 12:40:45,585:app:Closing the connection
