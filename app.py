@@ -1,6 +1,6 @@
 from flask import Flask, flash, request, jsonify
 from conn import set_connection     # import database connection file
-from settings import logger
+from settings import logger, handle_exceptions
 import psycopg2
 
 app = Flask(__name__)
@@ -29,30 +29,6 @@ app.config['SECRET_KEY'] = 'super secret key'
 #        1 |       1 | New Post
 #        2 |       2 | Variety
 
-
-def handle_exceptions(func):
-    def wrapper(*args, **kwargs):
-        try:
-            return func(*args, **kwargs)
-        except psycopg2.Error as error:
-            conn = kwargs.get('conn')
-            if conn:
-                conn.rollback()
-            logger(__name__).error(f"Error occurred: {error}")
-            return jsonify({"message": f"Error occurred: {error}"})
-        except Exception as error:
-            logger(__name__).error(f"Error occurred: {error}")
-            return jsonify({"message": f"Error occurred: {error}"})
-        finally:
-            conn = kwargs.get("conn")
-            cur = kwargs.get("cur")
-            # close the database connection
-            if conn:
-                conn.close()
-            if cur:
-                cur.close()
-            logger(__name__).warning("Closing the connection")
-    return wrapper
 
 
 @app.route("/accounts", methods=["GET", "POST"])  # CREATE an account
@@ -140,7 +116,6 @@ def comment_post(username):
     return jsonify({"message": "commented on post"}), 200
 
 
-
 @app.route("/create_post/<int:sno>", methods=["POST"], endpoint='create_post')
 @handle_exceptions
 def create_post(sno):
@@ -165,8 +140,6 @@ def create_post(sno):
     logger(__name__).info(f"Created new post with account no. {sno}")
 
     return jsonify({"message": data}), 202
-
-
 
 
 @app.route("/accounts/<int:sno>", methods=["PUT"], endpoint='update_account_details')
@@ -203,8 +176,6 @@ def update_account_details(sno):
 
     logger(__name__).warning("Hence accounts updated, closing the connection")
     return jsonify({"message": "Account updated", "Details": data}), 200
-
-
 
 
 @app.route("/delete/<int:sno>", methods=["DELETE"], endpoint='delete_user')      # DELETE an item from cart
