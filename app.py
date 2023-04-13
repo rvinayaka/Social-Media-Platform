@@ -13,21 +13,21 @@ app.config['SECRET_KEY'] = 'super secret key'
 #                     comments VARCHAR(300) NOT NULL);"""
 
 # Socials Table
-#  sno | username | liked |   comments    | post
-# -----+----------+-------+---------------+------
-#    1 | KIWI     | t     | Nice Picture  | NEW
-#    2 | Anti     | f     | Nice          | NEW
-#    3 | Anti     | f     | Nice          | NEW
-#    5 | Parsya   | t     | Active fellow | OLD
-#    6 | Loid     | t     | Intelligent   | OLD
-#    4 | Anya     | t     | Mind reader   | NEW
+#  sno | username | liked |   comments    | post |         interests
+# -----+----------+-------+---------------+------+----------------------------
+#    1 | KIWI     | t     | Nice Picture  | NEW  | National Geographic
+#    2 | Anti     | f     | Nice          | NEW  | NASA, ISRO, Gossips Akka
+#    3 | Anti     | f     | Nice          | NEW  | Collective memes
+#    4 | Anya     | t     | Mind reader   | NEW  | Virally India
+#    5 | Parsya   | t     | Active fellow | OLD  | Techy bhau
+#    6 | Loid     | t     | Intelligent   | OLD  | Me Mumbaikar, Amchi Mumbai
 
 
 # Posts Table
-#  post_id | user_id | content
-# ---------+---------+----------
-#        1 |       1 | New Post
-#        2 |       2 | Variety
+#  post_id | user_id | content  | views
+# ---------+---------+----------+-------
+#        1 |       1 | New Post |   200
+#        2 |       2 | Variety  |  1000
 
 
 
@@ -154,8 +154,8 @@ def update_account_details(sno):
 
     if not get_character:
         return jsonify({"message": "Character not found"}), 200
-    data = request.get_json()
 
+    data = request.get_json()
     # get the values user wants to update
     username = data.get('username')
     liked = data.get('liked')
@@ -178,7 +178,7 @@ def update_account_details(sno):
     return jsonify({"message": "Account updated", "Details": data}), 200
 
 
-@app.route("/delete/<int:sno>", methods=["DELETE"], endpoint='delete_user')      # DELETE an item from cart
+@app.route("/delete/<int:sno>", methods=["DELETE"], endpoint='delete_user')      # DELETE user in the list
 @handle_exceptions
 def delete_user(sno):
     # start the database connection
@@ -196,6 +196,87 @@ def delete_user(sno):
     # Log the details into logger file
     logger(__name__).info(f"Account no {sno} deleted from the table")
     return jsonify({"message": "Deleted Successfully", "holder_name_no": sno}), 200
+
+
+@app.route("/search/<string:username>", methods=["GET"], endpoint='search_user')      # search user in the list
+@handle_exceptions
+def search_user(username):
+    # start the database connection
+    cur, conn = set_connection()
+    logger(__name__).warning("Starting the db connection to search user")
+
+    # Search query
+    query = "SELECT * FROM socials WHERE username = %s"
+
+    # execute query
+    cur.execute(query, (username,))
+    get_user = cur.fetchone()
+
+    if not get_user:
+        # Log the details into logger file
+        logger(__name__).info(f"{username} not found in the list")
+        return jsonify({"message": f"{username} not found in the list"}), 200
+    else:
+        # Log the details into logger file
+        logger(__name__).info(f"{username} found in the list")
+        return jsonify({"message": f"{username} found in the list", "details": get_user}), 200
+
+
+@app.route("/views/<int:post_id>", methods=["PUT"], endpoint='views_count')      # count the views on post
+@handle_exceptions
+def views_count(post_id):
+    # start the database connection
+    cur, conn = set_connection()
+    logger(__name__).warning("Starting the db connection to COUNT views")
+
+    # get the username, user wants to update
+    cur.execute("SELECT user_id from posts where post_id = %s", (post_id,))
+    get_user = cur.fetchone()
+
+    if not get_user:
+        # Log the details into logger file
+        logger(__name__).info(f"Post with {post_id} not found in the table")
+        return jsonify({"message": f"Post with {post_id} not found in the table"}), 200
+
+    # values taken from the user
+    data = request.get_json()
+    views = data.get('views')
+
+    # update query
+    query = "UPDATE posts SET views = %s WHERE post_id = %s;"
+    # execute query
+    cur.execute(query, (views, post_id))
+
+    # commit changes to table
+    conn.commit()
+
+    # Log the details into logger file
+    logger(__name__).info(f"Account no {get_user[0]} got views count of {views}")
+    return jsonify({"message": f"Account no {get_user[0]} got views count of {views}"}), 200
+
+
+@app.route("/interests/<int:sno>", methods=["PUT"], endpoint='interest_in')      # users interest
+@handle_exceptions
+def interest_in(sno):
+    # start the database connection
+    cur, conn = set_connection()
+    logger(__name__).warning("Starting the db connection to enter interest of user")
+
+    # take all interests from the user
+    interests = request.json.get('interests')
+
+    # insert query
+    query = "UPDATE socials SET interests = %s WHERE sno = %s"
+    values = (interests, sno)
+
+    # execute query
+    cur.execute(query, values)
+
+    # commit changes to table
+    conn.commit()
+    # Log the details into logger file
+    logger(__name__).info(f"Interest of user account no {sno} in the table")
+    return jsonify({"message": f"Interest of user account no {sno} in the table"}), 200
 
 
 

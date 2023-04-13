@@ -400,3 +400,396 @@ INFO:2023-04-05 12:40:45,584:app:Displayed list of all accounts
 WARNING:2023-04-05 12:40:45,585:app:Closing the connection
 WARNING:2023-04-05 12:40:45,585:app:Closing the connection
 WARNING:2023-04-05 12:40:45,585:app:Closing the connection
+WARNING:2023-04-13 15:12:20,584:app:Starting the db connection to search user
+INFO:2023-04-13 15:12:20,812:app:KIWI found in the list
+INFO:2023-04-13 15:12:20,812:app:KIWI found in the list
+WARNING:2023-04-13 15:12:20,812:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:12:29,966:app:Starting the db connection to search user
+WARNING:2023-04-13 15:12:29,966:app:Starting the db connection to search user
+WARNING:2023-04-13 15:12:29,966:app:Starting the db connection to search user
+INFO:2023-04-13 15:12:30,773:app:Anya found in the list
+INFO:2023-04-13 15:12:30,773:app:Anya found in the list
+INFO:2023-04-13 15:12:30,773:app:Anya found in the list
+INFO:2023-04-13 15:12:30,773:app:Anya found in the list
+WARNING:2023-04-13 15:12:30,773:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:12:30,773:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:12:53,518:app:Starting the db connection to COUNT views
+WARNING:2023-04-13 15:12:53,518:app:Starting the db connection to COUNT views
+WARNING:2023-04-13 15:12:53,518:app:Starting the db connection to COUNT views
+WARNING:2023-04-13 15:12:53,518:app:Starting the db connection to COUNT views
+WARNING:2023-04-13 15:12:53,518:app:Starting the db connection to COUNT views
+WARNING:2023-04-13 15:12:53,749:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:12:53,749:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:12:53,749:settings:Hence account created, closing the connection
+ERROR:2023-04-13 15:12:53,749:app:Exception on /views/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 242, in views_count
+    views = request.json('views')
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+ERROR:2023-04-13 15:12:53,749:app:Exception on /views/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 242, in views_count
+    views = request.json('views')
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+ERROR:2023-04-13 15:12:53,749:app:Exception on /views/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 242, in views_count
+    views = request.json('views')
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+ERROR:2023-04-13 15:12:53,749:app:Exception on /views/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 242, in views_count
+    views = request.json('views')
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+ERROR:2023-04-13 15:12:53,749:app:Exception on /views/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 242, in views_count
+    views = request.json('views')
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+WARNING:2023-04-13 15:13:44,590:app:Starting the db connection to COUNT views
+WARNING:2023-04-13 15:13:45,043:settings:Hence account created, closing the connection
+ERROR:2023-04-13 15:13:45,043:app:Exception on /views/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 247, in views_count
+    cur.execute(query, (sno,))
+IndexError: tuple index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+WARNING:2023-04-13 15:14:24,839:app:Starting the db connection to COUNT views
+WARNING:2023-04-13 15:14:25,151:settings:Hence account created, closing the connection
+ERROR:2023-04-13 15:14:25,151:app:Exception on /views/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 248, in views_count
+    cur.execute(query, (sno,))
+IndexError: tuple index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+WARNING:2023-04-13 15:14:54,062:app:Starting the db connection to COUNT views
+WARNING:2023-04-13 15:14:54,353:settings:Hence account created, closing the connection
+ERROR:2023-04-13 15:14:54,354:app:Exception on /views/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 248, in views_count
+    cur.execute(query, (views, sno))
+psycopg2.errors.UndefinedColumn: column "sno" does not exist
+LINE 1: UPDATE posts SET views = 200 WHERE sno = 1
+                                           ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+WARNING:2023-04-13 15:23:59,351:app:Starting the db connection to COUNT views
+INFO:2023-04-13 15:23:59,546:app:Account no 1 got views count of 200
+INFO:2023-04-13 15:23:59,546:app:Account no 1 got views count of 200
+WARNING:2023-04-13 15:23:59,547:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:24:13,623:app:Starting the db connection to COUNT views
+WARNING:2023-04-13 15:24:13,623:app:Starting the db connection to COUNT views
+WARNING:2023-04-13 15:24:13,623:app:Starting the db connection to COUNT views
+INFO:2023-04-13 15:24:13,834:app:Account no 2 got views count of 1000
+INFO:2023-04-13 15:24:13,834:app:Account no 2 got views count of 1000
+INFO:2023-04-13 15:24:13,834:app:Account no 2 got views count of 1000
+INFO:2023-04-13 15:24:13,834:app:Account no 2 got views count of 1000
+WARNING:2023-04-13 15:24:13,835:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:24:13,835:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:26:56,672:app:Starting the db connection to delete the account
+WARNING:2023-04-13 15:26:56,673:settings:Hence account created, closing the connection
+ERROR:2023-04-13 15:26:56,673:app:Exception on /abc/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/app.py", line 266, in interest_in
+    interests = request.json('interest')
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/SocialMedia/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+WARNING:2023-04-13 15:27:13,297:app:Starting the db connection to delete the account
+INFO:2023-04-13 15:27:13,492:app:Account no 1 deleted from the table
+INFO:2023-04-13 15:27:13,492:app:Account no 1 deleted from the table
+WARNING:2023-04-13 15:27:13,492:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:30:40,338:app:Starting the db connection to delete the account
+INFO:2023-04-13 15:30:40,517:app:Interest of user account no 1 in the table
+INFO:2023-04-13 15:30:40,517:app:Interest of user account no 1 in the table
+WARNING:2023-04-13 15:30:40,518:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:31:10,919:app:Starting the db connection to delete the account
+WARNING:2023-04-13 15:31:10,919:app:Starting the db connection to delete the account
+WARNING:2023-04-13 15:31:10,919:app:Starting the db connection to delete the account
+INFO:2023-04-13 15:31:11,080:app:Interest of user account no 1 in the table
+INFO:2023-04-13 15:31:11,080:app:Interest of user account no 1 in the table
+INFO:2023-04-13 15:31:11,080:app:Interest of user account no 1 in the table
+INFO:2023-04-13 15:31:11,080:app:Interest of user account no 1 in the table
+WARNING:2023-04-13 15:31:11,080:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:31:11,080:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:33:05,328:app:Starting the db connection to enter interest of user
+INFO:2023-04-13 15:33:05,503:app:Interest of user account no 1 in the table
+INFO:2023-04-13 15:33:05,503:app:Interest of user account no 1 in the table
+WARNING:2023-04-13 15:33:05,504:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:33:30,784:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:33:30,784:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:33:30,784:app:Starting the db connection to enter interest of user
+INFO:2023-04-13 15:33:30,948:app:Interest of user account no 1 in the table
+INFO:2023-04-13 15:33:30,948:app:Interest of user account no 1 in the table
+INFO:2023-04-13 15:33:30,948:app:Interest of user account no 1 in the table
+INFO:2023-04-13 15:33:30,948:app:Interest of user account no 1 in the table
+WARNING:2023-04-13 15:33:30,949:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:33:30,949:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:33:48,637:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:33:48,637:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:33:48,637:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:33:48,637:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:33:48,637:app:Starting the db connection to enter interest of user
+INFO:2023-04-13 15:33:48,826:app:Interest of user account no 2 in the table
+INFO:2023-04-13 15:33:48,826:app:Interest of user account no 2 in the table
+INFO:2023-04-13 15:33:48,826:app:Interest of user account no 2 in the table
+INFO:2023-04-13 15:33:48,826:app:Interest of user account no 2 in the table
+INFO:2023-04-13 15:33:48,826:app:Interest of user account no 2 in the table
+INFO:2023-04-13 15:33:48,826:app:Interest of user account no 2 in the table
+WARNING:2023-04-13 15:33:48,826:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:33:48,826:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:33:48,826:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:34:09,078:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:09,078:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:09,078:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:09,078:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:09,078:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:09,078:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:09,078:app:Starting the db connection to enter interest of user
+INFO:2023-04-13 15:34:09,253:app:Interest of user account no 3 in the table
+INFO:2023-04-13 15:34:09,253:app:Interest of user account no 3 in the table
+INFO:2023-04-13 15:34:09,253:app:Interest of user account no 3 in the table
+INFO:2023-04-13 15:34:09,253:app:Interest of user account no 3 in the table
+INFO:2023-04-13 15:34:09,253:app:Interest of user account no 3 in the table
+INFO:2023-04-13 15:34:09,253:app:Interest of user account no 3 in the table
+INFO:2023-04-13 15:34:09,253:app:Interest of user account no 3 in the table
+INFO:2023-04-13 15:34:09,253:app:Interest of user account no 3 in the table
+WARNING:2023-04-13 15:34:09,254:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:34:09,254:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:34:09,254:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:34:09,254:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:34:22,260:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:22,260:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:22,260:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:22,260:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:22,260:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:22,260:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:22,260:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:22,260:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:22,260:app:Starting the db connection to enter interest of user
+INFO:2023-04-13 15:34:22,428:app:Interest of user account no 4 in the table
+INFO:2023-04-13 15:34:22,428:app:Interest of user account no 4 in the table
+INFO:2023-04-13 15:34:22,428:app:Interest of user account no 4 in the table
+INFO:2023-04-13 15:34:22,428:app:Interest of user account no 4 in the table
+INFO:2023-04-13 15:34:22,428:app:Interest of user account no 4 in the table
+INFO:2023-04-13 15:34:22,428:app:Interest of user account no 4 in the table
+INFO:2023-04-13 15:34:22,428:app:Interest of user account no 4 in the table
+INFO:2023-04-13 15:34:22,428:app:Interest of user account no 4 in the table
+INFO:2023-04-13 15:34:22,428:app:Interest of user account no 4 in the table
+INFO:2023-04-13 15:34:22,428:app:Interest of user account no 4 in the table
+WARNING:2023-04-13 15:34:22,429:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:34:22,429:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:34:22,429:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:34:22,429:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:34:22,429:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:34:41,613:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:41,613:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:41,613:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:41,613:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:41,613:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:41,613:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:41,613:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:41,613:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:41,613:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:41,613:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:34:41,613:app:Starting the db connection to enter interest of user
+INFO:2023-04-13 15:34:41,782:app:Interest of user account no 5 in the table
+INFO:2023-04-13 15:34:41,782:app:Interest of user account no 5 in the table
+INFO:2023-04-13 15:34:41,782:app:Interest of user account no 5 in the table
+INFO:2023-04-13 15:34:41,782:app:Interest of user account no 5 in the table
+INFO:2023-04-13 15:34:41,782:app:Interest of user account no 5 in the table
+INFO:2023-04-13 15:34:41,782:app:Interest of user account no 5 in the table
+INFO:2023-04-13 15:34:41,782:app:Interest of user account no 5 in the table
+INFO:2023-04-13 15:34:41,782:app:Interest of user account no 5 in the table
+INFO:2023-04-13 15:34:41,782:app:Interest of user account no 5 in the table
+INFO:2023-04-13 15:34:41,782:app:Interest of user account no 5 in the table
+INFO:2023-04-13 15:34:41,782:app:Interest of user account no 5 in the table
+INFO:2023-04-13 15:34:41,782:app:Interest of user account no 5 in the table
+WARNING:2023-04-13 15:34:41,783:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:34:41,783:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:34:41,783:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:34:41,783:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:34:41,783:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:34:41,783:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:35:00,254:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:35:00,254:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:35:00,254:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:35:00,254:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:35:00,254:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:35:00,254:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:35:00,254:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:35:00,254:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:35:00,254:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:35:00,254:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:35:00,254:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:35:00,254:app:Starting the db connection to enter interest of user
+WARNING:2023-04-13 15:35:00,254:app:Starting the db connection to enter interest of user
+INFO:2023-04-13 15:35:00,416:app:Interest of user account no 6 in the table
+INFO:2023-04-13 15:35:00,416:app:Interest of user account no 6 in the table
+INFO:2023-04-13 15:35:00,416:app:Interest of user account no 6 in the table
+INFO:2023-04-13 15:35:00,416:app:Interest of user account no 6 in the table
+INFO:2023-04-13 15:35:00,416:app:Interest of user account no 6 in the table
+INFO:2023-04-13 15:35:00,416:app:Interest of user account no 6 in the table
+INFO:2023-04-13 15:35:00,416:app:Interest of user account no 6 in the table
+INFO:2023-04-13 15:35:00,416:app:Interest of user account no 6 in the table
+INFO:2023-04-13 15:35:00,416:app:Interest of user account no 6 in the table
+INFO:2023-04-13 15:35:00,416:app:Interest of user account no 6 in the table
+INFO:2023-04-13 15:35:00,416:app:Interest of user account no 6 in the table
+INFO:2023-04-13 15:35:00,416:app:Interest of user account no 6 in the table
+INFO:2023-04-13 15:35:00,416:app:Interest of user account no 6 in the table
+INFO:2023-04-13 15:35:00,416:app:Interest of user account no 6 in the table
+WARNING:2023-04-13 15:35:00,417:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:35:00,417:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:35:00,417:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:35:00,417:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:35:00,417:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:35:00,417:settings:Hence account created, closing the connection
+WARNING:2023-04-13 15:35:00,417:settings:Hence account created, closing the connection
